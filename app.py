@@ -1,4 +1,6 @@
-from flask import flask
+#!/usr/bin/env python3
+
+from flask import Flask
 
 app = flask(__name__)
 
