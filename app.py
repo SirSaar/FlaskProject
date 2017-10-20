@@ -2,7 +2,11 @@
 
 from flask import Flask
 
-app = flask(__name__)
+app = Flask(__name__)
 
-if __name__ == '__main__':
+@app.route('/')
+def index():
+    return 'hi man'
+
+if name__ == '__main__':
     app.run()
