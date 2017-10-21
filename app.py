@@ -14,12 +14,12 @@ def about():
     return render_template('about.html')
 
 @app.route('/articles')
-def about():
+def articles():
     return render_template('articles.html', articles= Articles())
 
 @app.route('/articles/<string:id>/')
 def article(id):
-    return render_template('article.html', id=id) 
+    return render_template('article.html', id=id)
 
 if __name__ == '__main__':
     app.run(debug=True)
