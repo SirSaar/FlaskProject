@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% include 'includes/_head.html' %}
+    <meta charset="utf-8">
+     <title>mysite-saar</title>
+     <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
+     <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
   </head>
   <body>
     {% include 'includes/_navbar.html' %}
 
     <main role="main" class="container">
       <div class="starter-template">
-    {% block body %}{% endblock %}
-  </div>
+        {% block body %}{% endblock %}
+      </div>
     </main>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
