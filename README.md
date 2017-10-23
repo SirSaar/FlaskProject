@@ -13,4 +13,4 @@ commands need to be run before:
 
 to start the flask server:
   export FLASK_APP=app.py
-  flask run
+  flask run --host=0.0.0.0
